@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bug Report | TO The New</title>
+	<link rel="stylesheet" type="text/css" href="form1.css">
+</head>
+<body>
+	<header class="">
+		<a href="Home.html"> TO THE NEW</a>
+		<span id="right-nav">
+			<a href="#">Home</a>
+			<a href="#">Quick Help</a>
+		</span>
+	</header>
+	<br/>
+	<hr>
+	
+	<div id="form-container">
+
+		<div class="bug">Bug Report</div>
+		<form>
+		  <div id="form-spacing">
+
+			<div class="field-spacing">
+				<label for="title"> Title: <span class="star">*</span></label> <br/>
+			    <input type="text" name="title" required> 
+			</div>
+
+			<div class="field-spacing">
+				<label for="description"> Description: <span class="star">*</span></label> <br/>
+				<textarea name="description" cols="45" id="text-box" required></textarea>  
+			</div>
+
+			<div class="field-spacing">
+				<label for="operating-system"> Operatring system: </label>  <br/>
+				<select class="drop-down" name="operating-system">
+	        		<option value="Windows">Windows XP</option>
+	        		<option value="Ubuntu">Ubuntu</option>
+	        		<option value="Mac">Mac</option>
+	        		<option value="Fedora">Fedora</option>
+        		</select>  
+        	</div>
+
+			<div class="field-spacing">
+				<label for="product"> Product: <span class="star">*</span></label>  <br/>
+				<select class="drop-down" name="product">
+	        		<option value="Formoid">Formoid</option>
+	        		<option value="Tormoid">Tormoid</option>
+        		</select>  
+        	</div>
+
+			<div class="field-spacing">
+				<label for="version"> Version: <span class="star">*</span></label>  <br/>
+				<input type="text" name="version">  
+			</div>
+
+			<div class="field-spacing">
+				<label for="license"> License: </label>  <br/>
+				<input type="radio" name="license"> Free
+				<input type="radio" name="license"> Business    
+			</div>
+
+			<div class="field-spacing">
+				<label for="severity"> Severity: </label>  <br/>
+				<select class="drop-down" name="product">
+	        		<option value="Critical">Critical</option>
+	        		<option value="Normal">Normal</option>
+        		</select>  
+        	</div>
+
+			<div class="field-spacing">
+				<label for="attachments"> Attachments: </label> <br/>
+				
+					<input type="file" name="attachments" accept=".doc,.pdf">  
+				
+			</div>
+
+			
+	<!--		<div class="send-area">
+				<input type="submit" id="send-button" value="Send">
+			</div>	
+-->
+		  </div>
+		  <div class="bug">
+				<input type="submit" id="send-button" value="Send">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
