@@ -1,0 +1,128 @@
+#right-nav
+{
+	float: right;
+}
+
+#right-nav a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: #009B9B;
+}
+
+#right-nav a:hover
+{
+	color: black;
+}
+
+header a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: #009B9B;
+	margin: 2px;
+}
+
+a:hover
+{
+    color: black;
+    text-decoration: underline;	
+}
+
+hr
+{
+	color: #009B9B;	
+}
+
+.star
+{
+	color: red;
+}
+
+#form-container
+{
+	border: 2px solid #BBC0CA;
+	border-radius: 8px;
+	width: 35%;
+	margin: auto;
+}
+
+.bug{
+	height:35px;
+	background: #BBC0CA;
+	padding: 15px 15px 10px;
+	font-family: Arial;
+	font-weight: bold;		
+    font-size: 25px;
+    color: white;
+}
+
+#form-spacing
+{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+
+.field-spacing
+{
+	padding: 5px;
+}
+
+#text-box
+{
+	width: 100%;
+	border-radius: 7px;
+	height: 50px;	
+}
+
+.drop-down
+{
+	width:100%;
+	border-radius: 7px;
+	height: 30px;
+	background-color: #00C89B;
+}
+
+#send-button
+{
+	background: #00C89B; 
+	float: right;
+	border-radius: 6px;
+	height: 29px;
+    width: 74px;
+    font-family: Arial;
+	font-weight: bold;	
+	color: white;
+}
+
+.send-area
+{
+	height:35px;
+	background: #EDEEF1;
+	padding: 15px 15px 10px;
+	font-family: Arial;
+	font-weight: bold;		
+    font-size: 25px;
+    color: white;
+}
+
+/*#choose-file
+{
+	border: 1px outset;
+	width:100%;
+	border-radius: 7px;
+	height: 30px;
+}
+
+
+
+	float: right;*/
+
+input[type="file"]
+{
+	width:100%;
+ 	border: 1px outset;
+ 	border-radius: 7px;
+}
+
