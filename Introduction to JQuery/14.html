@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>change color</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  
+   
+  </style>
+</head>
+<body>
+
+  <table border="2px" cellspacing="10px" cellpadding="10px">
+    <tr>
+      <th>ID</th>
+      <th>Employee Name</th>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Abhishek Pandya</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Ronit</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Mohan Prasad</td>
+    </tr>
+      <tr>
+      <td>9</td>
+      <td>Raman</td>
+    </tr>
+
+<script>
+  $(document).ready(function () {
+    $("td").each(function () {
+      let value = $(this).text();
+      if (value > 10) {
+        $(this).css({"background": "#14d095", "color": "#fff"});
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dropdown append</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+<body>
+<div class="outer">
+
+  <h1>Select one of the options given.</h1>
+
+  <select id="dropdown">
+    <option value="FEEN">FEEN</option>
+    <option value="MEAN">MEAN</option>
+    <option value="JVM">JVM</option>
+    <option value="AMC">AMC</option>
+  </select>
+
+  <h3>Your competency is : <span class="selected-choice"></span></h3>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    console.log("Your document has loaded");
+    $("#dropdown").on("change", function () {
+      var ch = $("#dropdown").val();
+      $(".outer .selected-choice").text(ch);
+    })
+  });
+</script>
+
+</body>
+</html>

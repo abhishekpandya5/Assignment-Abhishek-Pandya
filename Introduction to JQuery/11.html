@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disable Google link</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+</head>
+<body>
+	
+	<a href="https://www.google.com">Google</a>
+
+	<script>
+		$(document).ready(function() {
+   		   $("a").on("click", function(e){
+   		   	e.preventDefault();
+   		   })
+		});
+	</script>
+	
+</body>
+</html>

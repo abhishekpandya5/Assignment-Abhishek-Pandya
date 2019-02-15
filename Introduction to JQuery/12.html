@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+  <h1>Inside div having main class</h1>
+  <ul>
+    <li id="li-element">list item can be clicked</li>
+  </ul>
+</div>
+<script>
+  $(document).ready(function () {
+    $(".main").click(function (event) {
+      console.log("Click event is bubbling!");
+      console.log(event.target);
+    })
+    $("#li-element").click(function (event) {
+      console.log(event.target + " clicked on!");
+      event.stopPropagation();
+    });
+  });
+</script>
+</body>
+</html>

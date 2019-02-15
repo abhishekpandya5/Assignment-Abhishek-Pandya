@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dropdown using hover</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    * {
+      font-family: calibri;
+    }
+
+    #dropdown {
+      padding: 10px;
+      border: 1px solid;
+      text-align: center;
+      color: black;
+      background: lightblue;
+    }
+
+    #dropdown-content {
+      display: none;
+    }
+
+    #dropdown-content a {
+      display: block;
+      width: 55px;
+      border: 1px solid;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      background: brown;
+    }
+  </style>
+</head>
+<body>
+<div class="outer">
+  <h1>List of Competency</h1>
+  <div>
+    <button id="dropdown">Competency</button>
+    <div id="dropdown-content">
+      <a href="#">FEEN</a>
+      <a href="#">MEAN</a>
+      <a href="#">JVM</a>
+      <a href="#">AMC</a>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    console.log("Your document has loaded");
+    $("#dropdown").hover(function () {
+      console.log("Hovering");
+      $("#dropdown-content").css({"display": "block"});
+    }, function () {
+      $("#dropdown-content").css({"display": "none"});
+    });
+  });
+</script>
+</body>
+</html>
