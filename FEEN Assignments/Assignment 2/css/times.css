@@ -1,0 +1,128 @@
+.container{
+	border: 13px solid #F3F3F3;
+	width: 65%;
+	margin: auto;
+}
+
+.container1{
+	width: 90%;
+	margin: auto;
+	/*border: 2px solid black;*/
+}
+
+#logo{
+	position: relative;
+	top: 14px;
+}
+
+#heading{
+	position: absolute;
+	right: 281px;
+}
+
+header{
+	padding-bottom: 44px;
+	border-bottom: 2px solid #F3F3F3;
+	margin-bottom: 92px;
+}
+
+#middle-heading{
+	width: 30%;
+	margin: auto;
+	padding-top: 28px;
+}
+
+.para1{
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 5px;
+}
+
+.grid-item{
+	text-align: justify;
+	
+    padding: 11px;
+
+}
+
+/*#image{
+	background-image: url("../resources/buzz.png");
+	height: 200px;
+	width: 200px;
+}*/
+
+
+#para{
+	padding: 11px;
+}
+.social{
+	width: 36%;
+	margin: auto;
+	text-align: center;
+	padding: 44px 20px;
+}
+
+.social a{
+	text-decoration: none;
+}
+
+.icon-spacing{
+	display: inline-block;
+	padding-left: 22px;
+}
+
+@media (max-width: 414px)  /* media query for iphone 6/7/8 plus */
+{
+	.container {
+    border: 11px solid #F3F3F3;
+    width: 91%;
+    margin: auto;
+}
+
+#heading {
+    position: absolute;
+    right: 55px;
+    width: 308px;
+    top: 120px;
+}
+
+#logo {
+    position: relative;
+    top: 26px;
+    /* text-align: center; */
+    left: 113px;
+}
+
+header {
+    padding-bottom: 112px;
+    border-bottom: 2px solid #F3F3F3;
+    margin-bottom: 34px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    
+}	
+#blog-image{
+	display: block;
+    margin: auto;
+}
+
+#middle-heading {
+	width: 100%;
+	padding-top: 0px;
+}
+
+.social {
+    width: 81%;
+   
+}
+
+
+}
